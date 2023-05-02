@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+    Author : ulas 
+    date created: 02.05.23
+-->
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="description" content="pickup line">
+    <meta name="keywords" content="gökçe">
+    <title> gokce </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <style>
+        #background-image {
+            background-image: url(images/D548B498-AC8B-4009-90B4-34A7DABDB688.JPG);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.7);
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .content h1 {
+            color: rgb(0, 0, 0);
+        }
+
+        .spacer {
+            height: 500px;
+        }
+
+        footer {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="background-image"></div>
+    <div class="content" style="display: flex; flex-direction: column; justify-content: center;">
+        
+        
+        <main style="display:flex; flex-direction: column; justify-content:center; align-items:center;">
+            <header>
+                <h1>Tanışalım mı?</h1>
+            </header>
+            
+            <form style="display:flex; flex-direction: column; justify-content:center; align-items:center;" onsubmit="return false;">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <label for="myCheckbox">Evet</label>
+                    <input type="checkbox" id="myCheckbox" name="myCheckbox" value="1">
+                    <span style="margin: 0 10px;">-</span>
+                    <label for="myCheckbox2">Hayır</label>
+                    <input type="checkbox" id="myCheckbox2" name="myCheckbox" value="2" disabled>
+                </div>
+                <button type="submit" style="margin-top: 20px;" onclick="showThankYou()">Gönder</button>
+            </form>
+            <div id="thankYouMessage" style="display: none; text-align: center;">
+                <h3>Teşekkürler</h3>
+                <p>Geri bildirimleriniz için teşekkür ederiz.</p>
+                <p>Ancak site sahibine geri bildirimlerinizi mesaj yolu ile iletirseniz çok seviriniriz (çünkü kendime henüz geri bildirimini gönderemiyorum :D)</p>
+                <p>+353 830 922 156</p>
+            </div>
+        </main>
+           
+
+        <div class="spacer"></div>
+
+        <footer style="display:flex; flex-direction: column; align-items: center;">
+            <p>&copy ulskmo</p>
+        </footer>
+    </div>
+    <script>
+        function showThankYou() {
+            document.getElementById("thankYouMessage").style.display = "block";
+            document.querySelector("form").style
+            document.querySelector("form").style.display = "none";
+        }
+</script>
+</body>
+</html>

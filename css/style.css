@@ -1,0 +1,26 @@
+#background-image {
+    background-image: url(images/D548B498-AC8B-4009-90B4-34A7DABDB688.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+  footer {
+    clear: both;
+    
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Yeni eklendi */
+}  
+
+html {
+    zoom: 250%;
+  }
